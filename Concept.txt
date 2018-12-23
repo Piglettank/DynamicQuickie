@@ -1,0 +1,36 @@
+Extremes
+Christmas
+
+super fat santa
+tons of presents
+large scale
+falling presents platform
+goal is super big gift
+tons of gifts
+jump super high
+
+capsule with christmas hat
+rotate christmas tree that has presents 
+reach the star
+snow
+one player
+
+
+assets:_____________
+player character
+presents
+tree 
+snow
+
+
+
+code:
+game state
+jumping and how it intereacts with the presents
+
+
+
+or 
+
+jump on branches 
+
