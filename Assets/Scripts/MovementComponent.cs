@@ -20,7 +20,7 @@ public class MovementComponent : MonoBehaviour
     public float gravity = 10;
     public float walkSpeedZ = 10;
     public float walkSpeedX = 10;
-    public float jumpHeight = 5;
+    public float jumpHeight = 5;    
     public float airControlZ = .8f;
     public float airControlX = .8f;
     public float slideTime = 1;
