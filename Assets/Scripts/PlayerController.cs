@@ -8,6 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private MovementComponent movementComp;
+    private CameraController cameraController;
 
     void Start()
     {
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Player movement component not found");
             return;
         }
+
+        cameraController = playerCharacterObj.GetComponent<CameraController>();
     }
 
     void Update()
@@ -34,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButton("Restart")) { SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
 
+        //cameraController.RotateHorizontal(Input.GetAxis("Mouse X"));
     }
 
 }
