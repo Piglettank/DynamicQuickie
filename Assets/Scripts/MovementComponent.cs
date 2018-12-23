@@ -31,6 +31,7 @@ public class MovementComponent : MonoBehaviour
     public float switchAccepetanceRange = 1;
     public float switchRotateSpeed = 90;
     public float switchRotateAcceptanceRange = .0001f;
+    public float bounceSpeed = 10;
 
     [Header("Auto Run")]
     public bool autoRun = false;
@@ -94,6 +95,9 @@ public class MovementComponent : MonoBehaviour
                     SwitchWall(switchAxis);
                     state = MovementState.Switching;
                 }
+
+                velocity.y = Mathf.Abs(bounceSpeed);
+                state = MovementState.Jumping;
                 break;
             case MovementState.Jumping:
                 ClearActionRequests();
@@ -217,9 +221,13 @@ public class MovementComponent : MonoBehaviour
         }
         else
         {
-            StopFalling();
+            if(state == MovementState.Grounding)
+            {
+                StopFalling();
 
-            ClampToGround(outGround);
+                ClampToGround(outGround);
+
+            }
         }
     }
 

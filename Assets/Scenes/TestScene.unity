@@ -265,6 +265,11 @@ Prefab:
       propertyPath: gravity
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 114477520246854018, guid: 57e9f410986b38d4bb48f223a5d989c8,
+        type: 2}
+      propertyPath: bounceSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57e9f410986b38d4bb48f223a5d989c8, type: 2}
   m_IsPrefabAsset: 0
